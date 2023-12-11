@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="overlay"></div>
+        <div class="my-container px-0" id="wrap">
+            <div class="my-col-5 px-0" id="left-wrapper">
+                <form>
+                    <div class="">
+                        <div class="my-col-12 title-wrap">
+                            <h1>User Details</h1>
+                        </div>
+                        <div class="my-col-12" id="form-wrap">
+                            <div class="flex-align-end">
+                                <div class="my-col-6">
+                                    <div class="error-message"><p></p></div>
+                                    <input type="text" class="my-col-12" placeholder="First Name" id="firstName"/>
+                                </div>
+                                <div class="my-col-6">
+                                    <div class="error-message"><p></p></div>
+                                    <input type="text" class="my-col-12" placeholder="Last Name" id="lastName"/>
+                                </div>
+                            </div>
+                            <div class="my-col-12 form-field">
+                                <div class="error-message"><p></p></div>
+                                <input type="text" class="my-col-12" placeholder="Street / Number" id="street"/>
+                            </div>
+                            <div class="my-col-12 form-field">
+                                <div class="error-message"><p></p></div>
+                                <input type="text" class="my-col-12" placeholder="City" id="city"/>
+                            </div>
+                            <div class="my-col-12 form-field">
+                                <div class="error-message my-col-12"><p></p></div>
+                                <input type="text" class="my-col-12" placeholder="Country" id="country"/>
+                            </div>
+                            <div class="my-col-12">
+                                <input type="button" disabled="true" class="my-button bg-grey" value="Add User" id="submit"/>
+                                <div id="successed" class="success-message"></div>
+                                <div id="link" class=""><a href="table.html">View all users</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="my-col-7" id="map">
+               
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/main.js" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHksoiJjnL4DIV2kruTb_0-5eahWkeyks&callback=initMap" 
+    async defer></script>
+    <script src="assets/js/map-handler.js"></script>
+</body>
+</html>
